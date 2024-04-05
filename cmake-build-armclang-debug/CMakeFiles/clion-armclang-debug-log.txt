@@ -1,0 +1,23 @@
+"E:\Work\CLion\CLion 2023.1.5\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug --preset armclang-debug -S E:\ProgramSpace\SimpleProject -B E:\ProgramSpace\SimpleProject\cmake-build-armclang-debug
+Preset CMake variables:
+
+  CMAKE_TOOLCHAIN_FILE:FILEPATH="CMake-ARMClang-ToolChain.cmake"
+
+-- The C compiler identification is ARMClang 6.19.0
+-- The CXX compiler identification is ARMClang 6.19.0
+-- The ASM compiler identification is ARMClang
+-- Found assembler: C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Keil_v5/ARM/ARMCLANG/bin/armclang.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Minimal optimization, debug info included
+-- Configuring done (4.6s)
+-- Generating done (0.0s)
+-- Build files have been written to: E:/ProgramSpace/SimpleProject/cmake-build-armclang-debug
