@@ -25,13 +25,7 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "log.h"
-#include "assert.h"
-#include <stdio.h>
-#include <stdlib.h>
-
-#include "drv_pin.h"
-#include "hal_pin.h"
+#include "app.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -98,15 +92,15 @@ int main(void)
   MX_DMA_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-	log_set_level(LOG_LEVEL_TRACE);
-	uint8_t *p = NULL;
-	p = (uint8_t *)malloc(sizeof(uint8_t));
-	assert(p);
-	log_set_level(LOG_LEVEL_WARN);
+//	log_set_level(LOG_LEVEL_TRACE);
+//	uint8_t *p = NULL;
+//	p = (uint8_t *)malloc(sizeof(uint8_t));
+//	assert(p);
+//	log_set_level(LOG_LEVEL_WARN);
 
-    driver_pin_t pin_mcu_led_c13;
-    driver_pin_mcu_init(&pin_mcu_led_c13,"pin_led","C.13");
-    hal_pin_set_mode(&pin_mcu_led_c13.device.super,PIN_MODE_OUTPUT_PP);
+//    driver_pin_t pin_mcu_led_c13;
+//    driver_pin_mcu_init(&pin_mcu_led_c13,"pin_led","C.13");
+//    hal_pin_set_mode(&pin_mcu_led_c13.device.super,PIN_MODE_OUTPUT_PP);
 
 //    hal_pin_set_status(&pin_mcu_led_c13.device.super,true);
 //    HAL_Delay(100);
@@ -126,6 +120,8 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   skip_os:
+  app_main();
+  
   while (1)
   {
     /* USER CODE END WHILE */
@@ -136,10 +132,10 @@ int main(void)
 //	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
 //	  HAL_Delay(100);
 
-      hal_pin_set_status(&pin_mcu_led_c13.device.super,true);
-      HAL_Delay(1000);
-      hal_pin_set_status(&pin_mcu_led_c13.device.super,false);
-      HAL_Delay(1000);
+//      hal_pin_set_status(&pin_mcu_led_c13.device.super,true);
+//      HAL_Delay(1000);
+//      hal_pin_set_status(&pin_mcu_led_c13.device.super,false);
+//      HAL_Delay(1000);
   }
   /* USER CODE END 3 */
 }
