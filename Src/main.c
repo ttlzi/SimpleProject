@@ -136,6 +136,7 @@ int main(void)
 //      HAL_Delay(1000);
 //      hal_pin_set_status(&pin_mcu_led_c13.device.super,false);
 //      HAL_Delay(1000);
+	  //--keep=stm32f1xx_hal_gpio.o(HAL_GPIO_WritePin)
   }
   /* USER CODE END 3 */
 }

@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>2</Optim>
+            <Optim>1</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -1246,6 +1246,11 @@
               <FilePath>..\User\Device\device.c</FilePath>
             </File>
             <File>
+              <FileName>device_pin.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Device\device_pin.c</FilePath>
+            </File>
+            <File>
               <FileName>device_uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Device\device_uart.c</FilePath>
@@ -1261,9 +1266,9 @@
               <FilePath>..\User\Driver\driver.c</FilePath>
             </File>
             <File>
-              <FileName>drv_pin_mcu.c</FileName>
+              <FileName>driver_pin_mcu.c</FileName>
               <FileType>1</FileType>
-              <FilePath>..\User\Driver\drv_pin_mcu.c</FilePath>
+              <FilePath>..\User\Driver\driver_pin_mcu.c</FilePath>
             </File>
             <File>
               <FileName>driver_uart.c</FileName>

@@ -23,9 +23,14 @@ void start_task(void *pvParamaters)
 	vTaskDelete(NULL);
 }
 
+static driver_pin_t driver_pin_led_c13;
+
 void led_task(void *pvParamaters)
 {
-	bool led_status = false;
+	static bool led_status = false;
+	
+	driver_pin_init(&driver_pin_led_c13,"pin_led","C.13");
+	
 	while(1)
 	{
 		vTaskDelay(pdMS_TO_TICKS(100));
@@ -33,7 +38,7 @@ void led_task(void *pvParamaters)
 			led_status = false;
 		else if(led_status == false)
 			led_status = true;
-		HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,led_status);
+		(device_find_from_table("pin_led"))->device_ops->write(device_find_from_table("pin_led"),0,(const void *)led_status,0);
 	}
 }
 

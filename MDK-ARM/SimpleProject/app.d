@@ -27,7 +27,8 @@ simpleproject/app.o: ..\User\App\app.c ..\User\App\app.h ..\Inc\main.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pwr.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h \
-  ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h \
+  ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h ..\Inc\gpio.h \
+  ..\Inc\usart.h ..\Inc\dma.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\FreeRTOS.h \
   ..\Inc\FreeRTOSConfig.h \
   ..\Middlewares\Third_Party\FreeRTOS\Source\include\projdefs.h \
@@ -47,4 +48,6 @@ simpleproject/app.o: ..\User\App\app.c ..\User\App\app.h ..\Inc\main.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
-  ..\User\Common\assert.h ..\User\Common\log.h ..\User\Common\def.h
+  ..\User\Common\assert.h ..\User\Common\log.h ..\User\Common\def.h \
+  ..\User\Driver\driver_pin.h ..\User\Driver\driver.h \
+  ..\User\Device\device_pin.h ..\User\Device\device.h

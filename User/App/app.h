@@ -22,6 +22,8 @@
 #include "assert.h"
 #include "log.h"
 
+#include "driver_pin.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
