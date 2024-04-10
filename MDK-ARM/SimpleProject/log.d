@@ -4,6 +4,7 @@ simpleproject/log.o: ..\User\Common\log.c ..\User\Common\log.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h ..\User\Common\assert.h \
+  ..\User\Common\export.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h ..\Inc\usart.h \
   ..\Inc\main.h ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Inc\stm32f1xx_hal_conf.h \

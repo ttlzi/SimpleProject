@@ -1228,6 +1228,11 @@
               <FilePath>..\User\Common\assert.c</FilePath>
             </File>
             <File>
+              <FileName>export.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Common\export.c</FilePath>
+            </File>
+            <File>
               <FileName>log.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Common\log.c</FilePath>

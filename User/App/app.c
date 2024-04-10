@@ -33,7 +33,7 @@ void led_task(void *pvParamaters)
 	
 	while(1)
 	{
-		vTaskDelay(pdMS_TO_TICKS(100));
+		vTaskDelay(pdMS_TO_TICKS(1000));
 		if(led_status == true)
 			led_status = false;
 		else if(led_status == false)

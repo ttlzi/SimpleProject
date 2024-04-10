@@ -6,8 +6,10 @@
 #include <string.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include "log.h"
+
 #include "assert.h"
+#include "export.h"
+#include "log.h"
 
 #ifdef __cplusplus
 extern "C" {

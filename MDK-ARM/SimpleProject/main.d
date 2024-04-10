@@ -51,6 +51,7 @@ simpleproject/main.o: ..\Src\main.c ..\Inc\main.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
   C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
-  ..\User\Common\assert.h ..\User\Common\log.h ..\User\Common\def.h \
-  ..\User\Driver\driver_pin.h ..\User\Driver\driver.h \
-  ..\User\Device\device_pin.h ..\User\Device\device.h
+  ..\User\Common\assert.h ..\User\Common\def.h ..\User\Common\export.h \
+  ..\User\Common\log.h ..\User\Driver\driver_pin.h \
+  ..\User\Driver\driver.h ..\User\Device\device_pin.h \
+  ..\User\Device\device.h

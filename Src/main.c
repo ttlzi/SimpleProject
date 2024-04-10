@@ -127,16 +127,10 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-//	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
-//	  HAL_Delay(100);
-//	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
-//	  HAL_Delay(100);
-
-//      hal_pin_set_status(&pin_mcu_led_c13.device.super,true);
-//      HAL_Delay(1000);
-//      hal_pin_set_status(&pin_mcu_led_c13.device.super,false);
-//      HAL_Delay(1000);
-	  //--keep=stm32f1xx_hal_gpio.o(HAL_GPIO_WritePin)
+	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_SET);
+	  HAL_Delay(100);
+	  HAL_GPIO_WritePin(GPIOC,GPIO_PIN_13,GPIO_PIN_RESET);
+	  HAL_Delay(100);
   }
   /* USER CODE END 3 */
 }

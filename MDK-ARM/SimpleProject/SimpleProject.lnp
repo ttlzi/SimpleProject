@@ -35,6 +35,7 @@
 "simpleproject\port.o"
 "simpleproject\app.o"
 "simpleproject\assert.o"
+"simpleproject\export.o"
 "simpleproject\log.o"
 "simpleproject\device.o"
 "simpleproject\device_pin.o"
