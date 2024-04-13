@@ -6,15 +6,15 @@ simpleproject/stm32f1xx_it.o: ..\Src\stm32f1xx_it.c ..\Inc\main.h \
   ..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f1xx.h \
   ..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\stm32f103xb.h \
   ..\Drivers\CMSIS\Include\core_cm3.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
   ..\Drivers\CMSIS\Include\cmsis_version.h \
   ..\Drivers\CMSIS\Include\cmsis_compiler.h \
   ..\Drivers\CMSIS\Include\cmsis_armclang.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
   ..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stddef.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h \
@@ -28,11 +28,11 @@ simpleproject/stm32f1xx_it.o: ..\Src\stm32f1xx_it.c ..\Inc\main.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_tim_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_uart.h ..\Inc\gpio.h \
-  ..\Inc\usart.h ..\Inc\dma.h ..\Inc\stm32f1xx_it.h \
+  ..\Inc\main.h ..\Inc\usart.h ..\Inc\dma.h ..\Inc\stm32f1xx_it.h \
   ..\User\Bsp\debug_uart.h ..\User\Common\basic_queue.h \
-  ..\User\Common\def.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h ..\User\Common\assert.h \
+  ..\User\Common\def.h C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\string.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h ..\User\Common\assert.h \
   ..\User\Common\log.h ..\User\Common\export.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stdarg.h

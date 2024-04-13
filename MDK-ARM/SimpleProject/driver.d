@@ -1,12 +1,12 @@
 simpleproject/driver.o: ..\User\Driver\driver.c ..\User\Driver\driver.h \
   ..\User\Device\device_pin.h ..\User\Device\device.h \
-  ..\User\Common\def.h C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdint.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\string.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdlib.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdio.h ..\User\Common\assert.h \
-  ..\User\Common\log.h ..\User\Common\export.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdarg.h \
+  ..\User\Common\def.h C:\Keil\ARM\ARMCLANG\Bin\..\include\stdint.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stdbool.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\string.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stdlib.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stdio.h ..\User\Common\assert.h \
+  ..\User\Common\def.h ..\User\Common\log.h ..\User\Common\export.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stdarg.h \
   ..\User\Driver\driver_pin.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal.h \
   ..\Inc\stm32f1xx_hal_conf.h \
@@ -18,11 +18,11 @@ simpleproject/driver.o: ..\User\Driver\driver.c ..\User\Driver\driver.h \
   ..\Drivers\CMSIS\Include\cmsis_version.h \
   ..\Drivers\CMSIS\Include\cmsis_compiler.h \
   ..\Drivers\CMSIS\Include\cmsis_armclang.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\arm_compat.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\arm_acle.h \
   ..\Drivers\CMSIS\Device\ST\STM32F1xx\Include\system_stm32f1xx.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h \
-  C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stddef.h \
+  C:\Keil\ARM\ARMCLANG\Bin\..\include\stddef.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_rcc_ex.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio.h \
   ..\Drivers\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_gpio_ex.h \

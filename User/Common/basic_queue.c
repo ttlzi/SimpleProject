@@ -2,6 +2,13 @@
 
 LOG_TAG("basic_queue.c");
 
+/*
+ *  @breif  Queue initialization.
+ *  @param	me
+ *  @param	buf
+ *  @param	size
+ *  @retval	None
+ */
 void basic_queue_init(basic_queue_t * const me,void * buf,uint16_t size)
 {
 	assert(me != NULL);
@@ -14,6 +21,15 @@ void basic_queue_init(basic_queue_t * const me,void * buf,uint16_t size)
 	me->tail = 0;
 }
 
+/*
+ *  @breif  Push data into Queue
+ *  @param	me
+ *  @param	buf
+ *  @param	size
+ *  @retval
+ *      false:Push failure
+ *      true:Push Success
+ */
 bool basic_queue_push(basic_queue_t * const me,void * buf,uint16_t size)
 {
 	assert(me != NULL);
@@ -34,6 +50,13 @@ bool basic_queue_push(basic_queue_t * const me,void * buf,uint16_t size)
 	return true;
 }
 
+/*
+ *  @breif  Pull data from Queue,but the data is not poped.
+ *  @param	me
+ *  @param	buf
+ *  @param	size
+ *  @retval Pull data len
+ */
 uint16_t basic_queue_pull(basic_queue_t * const me,void * buf,uint16_t size)
 {
 	assert(me != NULL);
@@ -49,6 +72,12 @@ uint16_t basic_queue_pull(basic_queue_t * const me,void * buf,uint16_t size)
 	return size_pull;
 }
 
+/*
+ *  @breif	Pop data from Queue
+ *  @param	me
+ *  @param	size
+ *  @retval Pop data len
+ */
 uint16_t basic_queue_pop(basic_queue_t * const me,uint16_t size)
 {
     assert(me != NULL);
@@ -63,6 +92,13 @@ uint16_t basic_queue_pop(basic_queue_t * const me,uint16_t size)
 	return size_pop;
 }
 
+/*
+ *  @breif	Pull and pop data from Queue,and the data is poped.
+ *  @param	me
+ *  @param	buf
+ *  @param	size
+ *  @retval Pull and pop data len
+ */
 uint16_t basic_queue_pull_pop(basic_queue_t * const me,void * buf,uint16_t size)
 {
     assert(me != NULL);
@@ -82,6 +118,11 @@ uint16_t basic_queue_pull_pop(basic_queue_t * const me,void * buf,uint16_t size)
 	return size_pull_pop;
 }
 
+/*
+ *  @breif	Clear Queue's data
+ *  @param	me
+ *  @retval None
+ */
 void basic_queue_clear(basic_queue_t * const me)
 {
 	assert(me != NULL);
@@ -91,6 +132,11 @@ void basic_queue_clear(basic_queue_t * const me)
 	me->head = me->tail = 0;
 }
 
+/*
+ *  @breif	Get Queue's Free Size
+ *  @param	me
+ *  @retval This Queue's Free Size
+ */
 uint16_t basic_queue_get_size_free(basic_queue_t * const me)
 {
     assert(me != NULL);
@@ -99,6 +145,11 @@ uint16_t basic_queue_get_size_free(basic_queue_t * const me)
 	return me->size_free;
 }
 
+/*
+ *  @breif	Get Queue's Total Size
+ *  @param	me
+ *  @retval This Queue's Total Size
+ */
 uint16_t basic_queue_get_size_total(basic_queue_t * const me)
 {
     assert(me != NULL);
@@ -107,6 +158,13 @@ uint16_t basic_queue_get_size_total(basic_queue_t * const me)
     return me->size_total;
 }
 
+/*
+ *  @breif	Check Queue if is empty
+ *  @param	me
+ *  @retval
+ *      false:This Queue is Not Empty
+ *      true:This Queue is Empty
+ */
 bool basic_queue_is_empty(basic_queue_t * const me)
 {
     assert(me != NULL);
@@ -115,6 +173,13 @@ bool basic_queue_is_empty(basic_queue_t * const me)
 	return ((me->size_free == me->size_total) ? true : false);
 }
 
+/*
+ *  @breif	Check Queue if is full
+ *  @param	me
+ *  @retval
+ *      false:This Queue is Not Full
+ *      true:This Queue is Full
+ */
 bool basic_queue_is_full(basic_queue_t * const me)
 {
     assert(me != NULL);

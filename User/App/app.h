@@ -12,8 +12,8 @@
 #include "event_groups.h"
 #include "stream_buffer.h"
 
-#include <stdbool.h>
 #include <stdint.h>
+#include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>

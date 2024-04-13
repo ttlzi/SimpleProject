@@ -1,8 +1,5 @@
 #include "log.h"
 #include "usart.h"
-#include "dma.h"
-#include <stdio.h>
-#include <stdarg.h>
 
 #ifdef __cplusplus
 extern "C" {

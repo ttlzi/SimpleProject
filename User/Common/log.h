@@ -56,9 +56,7 @@ void log_set_level(uint8_t level);
 void _log(const char * tag, uint8_t level, uint32_t line, const char * fmt, ...);
 
 #else
-
-#define				LOG_TAG(tag)				
-
+#define				LOG_TAG(tag)
 #define				log_t(...)
 #define				log_i(...)
 #define				log_d(...)

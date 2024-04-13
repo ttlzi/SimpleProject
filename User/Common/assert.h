@@ -26,8 +26,6 @@ void _assert_func(void);
 #define		assert(ptr)
 #endif
 
-
-
 #ifdef __cplusplus
 }
 #endif
