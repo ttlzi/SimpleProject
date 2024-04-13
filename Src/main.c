@@ -19,7 +19,6 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
-#include "dma.h"
 #include "usart.h"
 #include "gpio.h"
 
@@ -89,24 +88,8 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
-  MX_DMA_Init();
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-//	log_set_level(LOG_LEVEL_TRACE);
-//	uint8_t *p = NULL;
-//	p = (uint8_t *)malloc(sizeof(uint8_t));
-//	assert(p);
-//	log_set_level(LOG_LEVEL_WARN);
-
-//    driver_pin_t pin_mcu_led_c13;
-//    driver_pin_mcu_init(&pin_mcu_led_c13,"pin_led","C.13");
-//    hal_pin_set_mode(&pin_mcu_led_c13.device.super,PIN_MODE_OUTPUT_PP);
-
-//    hal_pin_set_status(&pin_mcu_led_c13.device.super,true);
-//    HAL_Delay(100);
-//    hal_pin_set_status(&pin_mcu_led_c13.device.super,false);
-//    HAL_Delay(100);
-
 	goto skip_os;
   /* USER CODE END 2 */
 
@@ -120,6 +103,7 @@ int main(void)
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   skip_os:
+  export_run();
   app_main();
   
   while (1)

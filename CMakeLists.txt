@@ -86,6 +86,8 @@ include_directories(
         User/Driver
         User/Hal
         User/UnitTest
+
+        User/3rd/LetterShell
 )
 
 #9.设置源文件路径
@@ -107,6 +109,8 @@ file(GLOB_RECURSE SOURCES
         User/Driver/*.c
         User/Hal/*.c
         User/UnitTest/*.c
+
+        User/3rd/LetterShell/*.c
 )
 
 #10.将由 CubeMX 生成的 GCC 编译环境中的会干扰ARMCC环境的文件，放在 EXCLUDE_SRCS 自定义列表中

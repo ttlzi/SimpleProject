@@ -314,7 +314,7 @@
           </ArmAdsMisc>
           <Cads>
             <interw>1</interw>
-            <Optim>1</Optim>
+            <Optim>2</Optim>
             <oTime>0</oTime>
             <SplitLS>0</SplitLS>
             <OneElfS>1</OneElfS>
@@ -329,8 +329,8 @@
             <uC99>1</uC99>
             <uGnu>0</uGnu>
             <useXO>0</useXO>
-            <v6Lang>5</v6Lang>
-            <v6LangP>3</v6LangP>
+            <v6Lang>6</v6Lang>
+            <v6LangP>4</v6LangP>
             <vShortEn>1</vShortEn>
             <vShortWch>1</vShortWch>
             <v6Lto>0</v6Lto>
@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F103xB</Define>
               <Undefine></Undefine>
-              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../User/App;../User/Bsp;../User/Common;../User/Config;../User/Device;../User/Driver;../User/Hal;../User/UnitTest</IncludePath>
+              <IncludePath>../Inc;../Drivers/STM32F1xx_HAL_Driver/Inc;../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F1xx/Include;../Drivers/CMSIS/Include;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM3;../User/App;../User/Bsp;../User/Common;../User/Config;../User/Device;../User/Driver;../User/Hal;../User/UnitTest;../User/3rd/LetterShell</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -459,11 +459,6 @@
                   </Cads>
                 </FileArmAds>
               </FileOption>
-            </File>
-            <File>
-              <FileName>dma.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>../Src/dma.c</FilePath>
             </File>
             <File>
               <FileName>usart.c</FileName>
@@ -1218,6 +1213,13 @@
         </Group>
         <Group>
           <GroupName>User-Bsp</GroupName>
+          <Files>
+            <File>
+              <FileName>debug_uart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Bsp\debug_uart.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>User-Common</GroupName>
@@ -1236,6 +1238,11 @@
               <FileName>log.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\User\Common\log.c</FilePath>
+            </File>
+            <File>
+              <FileName>basic_queue.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\Common\basic_queue.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -1304,6 +1311,31 @@
         </Group>
         <Group>
           <GroupName>User-UnitTest</GroupName>
+        </Group>
+        <Group>
+          <GroupName>User-3rd-LetterShell</GroupName>
+          <Files>
+            <File>
+              <FileName>shell.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\3rd\LetterShell\shell.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_cmd_list.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\3rd\LetterShell\shell_cmd_list.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_ext.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\3rd\LetterShell\shell_ext.c</FilePath>
+            </File>
+            <File>
+              <FileName>shell_port.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\3rd\LetterShell\shell_port.c</FilePath>
+            </File>
+          </Files>
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>

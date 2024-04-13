@@ -7,7 +7,7 @@
 extern "C" {
 #endif
 
-#define				LOG_USE
+//#define				LOG_USE
 
 #if defined(LOG_USE)
 #define				LOG_COLOR_USE	
